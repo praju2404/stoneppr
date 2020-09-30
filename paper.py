@@ -16,7 +16,7 @@ elif ch == 2:
 else:
    choice_name = 'scissor'
    print("Your choice is: " + choice_name)
-   print("\nNow its computer turn to initiate.......")
+       print("\nNow its computer turn to initiate.......")
 comp_choice = random.randint(1, 3)
 while comp_choice == ch:
     comp_choice = random.randint(1, 3)
@@ -30,8 +30,8 @@ else:
    comp_choice_name = 'scissor'
    print("So computer choice is: " + comp_choice_name)
    print(choice_name + " V/s " + comp_choice_name)
-if((ch == 1 and comp_choice == 2) and
-   (ch == 2 and comp_choice ==1 )):
+    if((ch == 1 and comp_choice == 2) and
+   (ch == 2 or comp_choice ==1 )):
     print("paper wins => ", end = "")
     final_result = "paper"
 elif((ch == 1 and comp_choice == 3) or
@@ -50,5 +50,5 @@ else:
    ans = input()
       # if user input n or N then condition is True
 if ans == 'n' or ans == 'N':
-    break
+        break
 print("\nThanks for sharing time with us...")
